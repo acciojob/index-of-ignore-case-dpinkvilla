@@ -11,7 +11,7 @@ function indexOfIgnoreCase(s1, s2) {
     if (index === -1) {
        
         for (let i = 0; i < lowerCaseStr.length; i++) {
-            if (lowerCaseSubStr.localeCompare(lowerCaseStr.substring(i, lowerCaseSubStr.length)) < 0) {
+            if (lowerCaseSubStr.localeCompare(lowerCaseStr.substring(i, i+lowerCaseSubStr.length)) < 0) {
                 return i;
             }
         }
